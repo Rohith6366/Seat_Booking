@@ -1,0 +1,22 @@
+<body>
+    <div class="wrapper">
+        <h2>Admin Login</h2>
+        <form (ngSubmit)="AdminLogInButton()">
+          <div class="input-box">
+            <input [(ngModel)]="AdminId" type="number" placeholder="AdminId" name="AdminId" required>
+          </div>
+          <div class="input-box">
+            <input [(ngModel)]="AdminPassword" type="password" placeholder="Password" name="Password" required>
+          </div>
+         <div class="input-box button">
+            <ngx-spinner  type = "ball-pulse" size = "medium"><p style="color: rgb(255, 255, 255); font-size: 18px;">Loading....</p>
+            </ngx-spinner>
+            <button class="custom-button btn" (click)="openScanner()">Login</button>
+          </div>
+          <div class="text">
+            <h3>Employee Login!  <a [routerLink]="['/login']">Login now</a></h3>
+            <h3>Employee Registration!  <a [routerLink]="['/signup']">Register now</a></h3>
+          </div>
+        </form>
+    </div>
+</body>

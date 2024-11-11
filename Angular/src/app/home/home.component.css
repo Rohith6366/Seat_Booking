@@ -1,0 +1,101 @@
+*
+{
+  font-family: 'Kanit', sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul li {
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+  }
+  
+  ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    /* font-family: sans-serif; */
+    color: #070707;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  
+  ul:hover li a {
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+  }
+  
+  ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4998ff;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+  }
+  
+  ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .content{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 50px;
+    
+  }
+  
+  h2
+  {
+    padding-top: 220px;
+    /* font-style: oblique; */
+    /* font-family: sans-serif; */
+    margin: auto;
+  }
+
+  h1
+  {
+    padding-top: 20px;
+    font-style: oblique;
+    font-family: sans-serif;
+    margin: auto;
+  }
+
+  h1, h2 {
+    font-size: 60px;
+    background: linear-gradient(45deg, #FF5733, #6A0572, #00A388, #F0C27B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kanit', sans-serif; /* Change font-family */
+    font-style: italic; /* Change font-style */
+    text-align: center;
+    font-weight: bold; /* Center-align text */
+    /* padding: 20px; Add some padding */
+    margin: 0; /* Remove default margin */
+    line-height: 1.2; /* Adjust line height for better readability */
+  }
+  

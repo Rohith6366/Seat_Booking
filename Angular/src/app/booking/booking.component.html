@@ -1,0 +1,76 @@
+<body>
+    <div class="sidenav">
+        <h1>Welcome, <br>{{Username}}</h1>
+        <a [routerLink]="['/booking']">Book Your Space</a>
+        <a [routerLink]="['/profile']">Profile</a>
+        <a [routerLink]="['/home']">Log Out</a>
+    </div>
+    <div class="container">
+        <div class="Heading">
+        <h1>BOOK YOUR SPACE</h1>
+        </div>
+        <div class="dropdowns">
+<label for="tower">Select Tower : </label>
+<select [(ngModel)]="TowerName" name="TowerName" id="TowerName" >
+    <option *ngFor="let tower of towerNames" [value]="tower">{{ tower }}</option>
+</select>
+<br>
+<label for="floor">Select Floor : </label>
+            <select [(ngModel)]="FloorName" name="FloorName"  id="FloorName">
+                <option *ngFor="let floor of floorNumbers" [value]="floor">{{ floor }}</option>
+            </select>
+            <br>
+            <label for="BookingDate">Booking Date : </label>
+            <input type="date" id="BookingDate" [(ngModel)]="BookingDate" name="BookingDate">
+        </div>
+        <br>
+        
+        <div class="grid-container">
+            <div class="layout">
+            <div class="TT-grid">
+            <div class="TableTennis">TableTennis</div>
+            <div class="Cafeteria-grid">
+            <div class="Cafeteria">Break-out</div>
+        </div>
+        </div>
+        <div class="seat-grid">
+            <!-- Seat numbers are generated using CSS content property -->
+            <div class="seat" #seat1 (click)="onSeatClick(seat1)">1</div>
+            <div class="seat" #seat2 (click)="onSeatClick(seat2)">2</div>
+            <div class="seat" #seat3 (click)="onSeatClick(seat3)">3</div>
+            <div class="seat" #seat4 (click)="onSeatClick(seat4)">4</div>
+            <div class="seat" #seat5 (click)="onSeatClick(seat5)">5</div>
+            <div class="seat" #seat6 (click)="onSeatClick(seat6)">6</div>
+            <div class="seat" #seat7 (click)="onSeatClick(seat7)">7</div>
+            <div class="seat" #seat8 (click)="onSeatClick(seat8)">8</div>
+            <div class="seat" #seat9 (click)="onSeatClick(seat9)">9</div>
+            <div class="seat" #seat10 (click)="onSeatClick(seat10)">10</div>
+            <div class="seat" #seat11 (click)="onSeatClick(seat11)">11</div>
+            <div class="seat" #seat12 (click)="onSeatClick(seat12)">12</div>
+            <div class="seat" #seat13 (click)="onSeatClick(seat13)">13</div>
+            <div class="seat" #seat14 (click)="onSeatClick(seat14)">14</div>
+            <div class="seat" #seat15 (click)="onSeatClick(seat15)">15</div>
+            <div class="seat" #seat16 (click)="onSeatClick(seat16)">16</div>
+            <div class="seat" #seat17 (click)="onSeatClick(seat17)">17</div>
+            <div class="seat" #seat18 (click)="onSeatClick(seat18)">18</div>
+            <div class="seat" #seat19 (click)="onSeatClick(seat19)">19</div>
+            <div class="seat" #seat20 (click)="onSeatClick(seat20)">20</div>
+            <div class="seat" #seat21 (click)="onSeatClick(seat21)">21</div>
+            <div class="seat" #seat22 (click)="onSeatClick(seat22)">22</div>
+            <div class="seat" #seat23 (click)="onSeatClick(seat23)">23</div>
+            <div class="seat" #seat24 (click)="onSeatClick(seat24)">24</div>
+            <div class="seat" #seat25 (click)="onSeatClick(seat25)">25</div>
+            <div class="seat" #seat26 (click)="onSeatClick(seat26)">26</div>
+            <div class="seat" #seat27 (click)="onSeatClick(seat27)">27</div>
+            <div class="seat" #seat28 (click)="onSeatClick(seat28)">28</div>
+            <div class="seat" #seat29 (click)="onSeatClick(seat29)">29</div>
+            <div class="seat" #seat30 (click)="onSeatClick(seat30)">30</div>
+        </div>
+    </div >
+        </div>
+
+    <div class="Footer">
+        <button (click)="bookingButton()" class="submit-btn">Submit</button>
+    </div>
+    </div>
+</body>

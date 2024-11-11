@@ -1,0 +1,91 @@
+/* Apply styles to the entire table */
+*
+{
+  font-family: 'Pathway Extreme', sans-serif;
+}
+.content{
+    padding-left: 200px;
+}
+.content h2{
+    padding-left: 300px;
+    text-transform: uppercase;
+}
+table {
+    border-collapse: collapse; /* Merge adjacent borders */
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for table header (th) */
+  th {
+    background-color: #f2f2f2; /* Background color for headers */
+    border: 3px solid #000000; /* Border for headers */
+    text-align: left; /* Text alignment */
+    padding: 8px; /* Padding inside header cells */
+  }
+  
+  /* Style for table data (td) */
+  td {
+    border: 3px solid #000000; /* Border for data cells */
+    text-align: left; /* Text alignment */
+    padding: 8px; /* Padding inside data cells */
+  }
+
+    /* //sidenav// */
+    .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+      background: linear-gradient(45deg, #ff00d9, #6A0572, #00a318);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s linear infinite;
+    }
+  
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    .sidenav a {
+      padding: 6px 6px 6px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #aaa;
+      display: block;
+      font-size:larger;
+    }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .main {
+        margin-left: 200px; 
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      
+      .sidenav h1{
+          color: rgb(255, 255, 255);
+          font-size: larger;
+          padding-left: 30px;
+      }
+    body
+    {
+        font-family: 'Gabarito', sans-serif;
+    }

@@ -1,0 +1,19 @@
+<body>
+    <div class="sidenav">
+        <h1>Welcome, <br>{{UserName}}</h1>
+        <a [routerLink]="['/booking']">Book Your Space</a>
+        <a [routerLink]="['/profile']">Profile</a>
+        <a [routerLink]="['/home']">Log Out</a>
+    </div>
+<div class="wrapper">
+<div class="Heading">
+    <h1>PROFILE</h1>
+</div>
+<div class="Content">
+    <h3>Username : {{UserName}}</h3>
+    <h3>EmployeeId : {{EmployeeId}}</h3>
+    <h3>EmailId : {{EmailId}}</h3>
+    <h3>Password : {{Password}}</h3>
+</div>
+</div>
+</body>

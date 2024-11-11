@@ -1,0 +1,15 @@
+body{
+    background-color:#ffffff;
+    font-family: 'Pathway Extreme', sans-serif;
+    border:solid 2px #E1AA74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    }
+    
+    .heading-1{
+    margin-top: 50px;
+    text-align:center;
+    }

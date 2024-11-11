@@ -1,0 +1,27 @@
+<body>
+    <div class="sidenav">
+        <h1>Welcome, ADMIN</h1>
+        <a [routerLink]="['/adminpage']">Dashboard</a>
+        <a [routerLink]="['/bookinghistory']">Booking History</a>
+        <a [routerLink]="['/home']">Log Out</a>
+    </div>
+    <div class="container">
+        <h1>DASHBOARD</h1>
+        <div class="dropdowns">
+            <label for="tower">Add Tower : </label>
+            <input [(ngModel)]="TowerName" type="text"  name="TowerName" id="AddTower" >
+            <div class="Footer">
+                <ngx-spinner  type = "ball-pulse" size = "medium"><p style="color: rgb(255, 255, 255); font-size: 18px;">Loading....</p>
+                </ngx-spinner>
+                <button (click)="combinedAction()" class="submit-btn">Submit</button>
+            </div>
+            <label for="floor">Add Floor : </label>
+            <input [(ngModel)]="FloorName" type="text"  name="FloorName" id="AddFloor" >
+            <div class="Footer">
+                <ngx-spinner  type = "ball-pulse" size = "medium"><p style="color: rgb(255, 255, 255); font-size: 18px;">Loading....</p>
+                </ngx-spinner>
+                <button (click)=combinedAction() class="submit-btn">Submit</button>
+            </div>
+        </div>
+</div>
+</body>     

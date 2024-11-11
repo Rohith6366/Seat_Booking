@@ -1,0 +1,87 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pathway Extreme', sans-serif;
+  }
+.wrapper{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #141212; 
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(25, 0, 255, 0.2); 
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+.Content,.Heading{
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    color: #a5a6e2;
+    border-radius: 6px;
+  }
+  .wrapper h1{
+    display: flex;
+    font-size: 22px;
+    color: #ff0101;
+    justify-content: center;
+  }
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background: linear-gradient(45deg, #ff00d9, #6A0572, #00a318);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s linear infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #aaa;
+    display: block;
+    font-size:larger;
+  }
+    
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 200px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .sidenav h1{
+      color: rgb(255, 255, 255);
+      font-size: larger;
+      padding-left: 30px;
+  }
